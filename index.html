@@ -113,6 +113,18 @@
     font-size:13px; color:var(--muted);
   }
   .studio-note b { color:#b9a6ff; }
+  .studio-note-alt {
+    flex-direction:column; gap:12px; text-align:center;
+    background:rgba(255,193,7,0.07); border-top:1px solid rgba(255,193,7,0.18);
+  }
+  .studio-note-alt b { color:#ffd76e; }
+  .open-tab-btn {
+    display:inline-flex; align-items:center; gap:8px;
+    padding:10px 22px; border-radius:100px; font-size:14px; font-weight:600;
+    color:#fff; background:linear-gradient(135deg,#7c5cff,#00d4ff);
+    text-decoration:none; transition:opacity .2s, transform .2s;
+  }
+  .open-tab-btn:hover { opacity:.88; transform:translateY(-1px); }
 
   /* ---------- How it works ---------- */
   .how { padding:80px 24px; background:var(--bg2); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
@@ -225,6 +237,10 @@
     </div>
     <div class="studio-note">
       🔐 <span>Funciona con tu cuenta de Google — <b>tus créditos gratuitos, sin pagar nada</b>. Si te pide iniciar sesión, es normal: así generas con tu propia cuota.</span>
+    </div>
+    <div class="studio-note studio-note-alt">
+      ⚠️ <span><b>¿El botón «Iniciar sesión con Google» no responde dentro de la ventana?</b> Es un bloqueo del navegador a los inicios de sesión embebidos. Pulsa el botón de abajo y ábrelo en una pestaña nueva — tardas 10 segundos y ya no vuelve a pasarte:</span>
+      <a class="open-tab-btn" href="https://labs.google/fx/tools/flow/shared/tool/fbc31389-1f3e-4bf8-9fb3-f38427e091bb" target="_blank" rel="noopener">↗ Abrir StudioFlow en pestaña nueva</a>
     </div>
   </div>
 </section>
